@@ -4,9 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Portfólio Wendell Silva</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400;1,900&display=swap" rel="stylesheet">
+    <!-- Dev Icon Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Wendell</h1>
+    <main id="container">
+        <aside id="bio-container">
+            <h2>Wendell</h2>
+            <div id="image-container">
+                <img id="bio-image" src="#" alt="Wendell de Carvalho Silva">
+            </div>
+            <p>Olá, meu nome é Wendell e sou <span class="highlight">Desenvolvedor Front-end.</span></p>
+            <p id="welcome-text">Seja bem-vindo!</p>
+            
+            <ul id="social-container">
+                <li><a href="" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+            
+            <div id="email-container">
+                <ion-icon name="mail-outline"></ion-icon><a href="mailto:wendellcs131@gmail.com">wendellcs131@gmail.com</a>
+            </div>
+        </aside>
+
+        <section id="about-container">
+            <h1 id="name">Wendell de Carvalho Silva</h1>
+            <p id="title">Desenvolvedor Front-end</p>
+            <p class="description">
+                Busco sempre aperfeiçoar minhas habilidades, com o objetivo de elevar tanto o nível quanto a qualidade dos meus projetos.
+            </p>
+            <p class="description">
+                Meu primeiro contato com <span class="highlight">desenvolvimento web</span> foi há cerca de um ano e foi quando eu tive
+                um grande interesse pela criação de páginas web. Desde então, tenho buscado
+                conhecimento na área e atualmente estou cursando <span class="highlight">Ciências da Computação</span> e
+                desenvolvendo diversos projetos para aprimorar minhas habilidades.
+            </p>
+            <a href="https://github.com/WendellCS/" target="_blank" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon><span>Ver projetos</span></a>
+        
+            <h2 id="skills-section-title">Minhas Skills</h2>
+            <p class="description">Conheça as tecnologias e ferramentas que domino:</p>
+            <div id="skills-container">
+                <div class="skills-box">
+                    <p class="skills-title">Front-end:</p>
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Tools:</p>
+                    <i class="devicon-git-plain colored"></i>
+                    <i class="devicon-github-plain colored"></i>
+                    <i class="devicon-markdown-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Idiomas:</p>
+                    <ul id="language-skills">
+                        <li>Inglês</li>
+                        <li>Português</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
