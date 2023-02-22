@@ -115,7 +115,7 @@
     margin-bottom: 10px;
 }
 
-#btn-projects {
+#btn-github {
     display: flex;
     font-size: 16px;
     font-weight: bold;
@@ -131,14 +131,14 @@
     text-align: center;
 }
 
-#btn-projects ion-icon , #btn-projects span {flex: 1 1 0;}
+#btn-github i , #btn-github span {flex: 1 1 0;}
 
-#btn-projects ion-icon {
+#btn-github i {
     font-size: 20px;
     max-width: 20px;
 }
 
-#btn-projects:hover {
+#btn-github:hover {
     background: transparent;
 }
 
@@ -174,18 +174,18 @@
     margin-right: 10px;
 }
 
-#language-skills {
+#language-skills , #projects-list {
     list-style-type: none; 
     padding: 0; 
 }
 
-#language-skills li {
+#language-skills li , #projects-list li {
     font-size: 18px;
     position: relative; 
     padding-left: 15px; 
 }
   
-#language-skills li:before {
+#language-skills li:before , #projects-list li:before {
     content: "\2022"; 
     line-height: 25px;
     position: absolute; 
@@ -193,6 +193,33 @@
     left: 0; 
     color: red; 
 }
+
+    /* Projects */
+
+.projects-container {
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.projects-container h2 {
+    font-size: 32px;
+}
+
+#projects-list {list-style-type: none; margin: 30px 0 0 20px}
+
+#projects-list  li {margin-top: 10px;}
+
+#projects-list a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: 0.2s;
+}
+
+#projects-list a:hover {
+    color: rgb(179, 64, 64);
+}
+
 
     /* Responsive */
 
@@ -218,7 +245,7 @@
     .skills-box i {font-size: 60px;}
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     #container {flex-direction: column;}
 
     #bio-container {
@@ -245,5 +272,8 @@
         line-height: 26px;
     }
 
-    #btn-projects {margin: 20px auto;}
+    #btn-github {margin: 20px auto; width: 70%;}
+
+    #projects-list {margin: auto;}
+    #projects-list li {text-align: left;}
 }
