@@ -2,95 +2,91 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Project CSS -->
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <main>
-    <!-- Sign-up form start -->
-    <div class="sign-up-start">
-      <section>
-        <div class="sign-up-section">
-          <h1>Stay updated!</h1>
+    <main class="form-container">
+        <header id="form-header">
+            <h1 class="form-title"> Register </h1>
+            <div class="title-decoration-left-side"></div>
+            <div class="title-decoration-rigth-side"></div>
+        </header>
 
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <form class="form" action="#">
+            <div class="top-container">
+                <!-- Name-box -->
+                <div class="info-box">
+                    <label for="first-name">First name: </label>
+                    <input value="" type="text" name="first-name" class="input-first-section first-name"
+                        placeholder="Name">
+                    <p class="errorAlertMessage"></p>
+                </div>
+                <div class="info-box">
+                    <label for="last-name">Last name: </label>
+                    <input value="" type="text" name="last-name" class="input-first-section last-name"
+                        placeholder="Last name (optional)">
+                    <p class="errorAlertMessage"></p>
+                </div>
+                <div class="info-box">
+                    <label for="email">E-mail: </label>
+                    <input value="" type="text" name="email" class="input-first-section email"
+                        placeholder="example@example.com">
+                    <p class="errorAlertMessage"></p>
+                </div>
+                <div class="info-box">
+                    <label for="pass">Phone number: </label>
+                    <input value="" type="tel" name="tel" class="input-first-section tel"
+                        placeholder="(xx) xxxxx-xxxx  (optional)">
+                    <p class="errorAlertMessage"></p>
+                </div>
+                <div class="info-box">
+                    <label for="pass">Password: </label>
+                    <input value="" type="password" name="pass" class="input-first-section password"
+                        placeholder="Password">
+                    <p class="errorAlertMessage"></p>
+                </div>
+                <div class="info-box">
+                    <label for="cpass">Confirm password: </label>
+                    <input value="" type="password" name="cpass" class="input-first-section confirm-password"
+                        placeholder="Confirm password">
+                    <p class="errorAlertMessage"></p>
+                </div>
+                <!-- End of name-box -->
+            </div>
+            <!-- End of top container -->
 
-          <ul id="list">
-            <li>
-              <div>
-                <img src="assets/images/icon-list.svg" alt="">
-                <p>
-                  Product discovery and building what matters
-                </p>
-              </div>
-            </li>
+            <div class="bottom-container">
+                <div class="gender-input-container">
+                    <h6 class="gender-title">Gender:</h6>
+                    <div class="gender-input-group">
+                        <div>
+                            <input type="radio" name="gender" class="input-gender" value="male" checked>
+                            <label for="none">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" class="input-gender" value="female">
+                            <label for="none">Female</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" class="input-gender" value="others">
+                            <label for="none">Others</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of gender-input div -->
+            </div>
+            <!-- End of bottom container -->
+            <input type="submit" class="btn-submit-form">
+        </form>
+    </main>
 
-            <li>
-              <div>
-                <img src="assets/images/icon-list.svg" alt="">
-                <p>
-                  Measuring to ensure updates are a success
-                </p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="assets/images/icon-list.svg" alt="">
-                <p>
-                  And much more!
-                </p>
-              </div>
-            </li>
-          </ul>
-
-          <form action="#">
-            <label for="email">Email address</label> <span class="error-message">Valid email required</span>
-            <input type="text" placeholder="email@company.com" id="email" class="input-email">
-
-            <button class="subscribe-btn">
-              Subscribe to monthly newsletter
-            </button>
-          </form>
-        </div>
-      </section>
-      <div class="image-container">
-        <img src="assets/images/illustration-sign-up-desktop.svg" alt="Sign-up illustration">
-      </div>
-    </div>
-    <!-- Sign-up form end -->
-
-    <!-- Success message start -->
-    <div class="success-message">
-
-      <img src="assets/images/icon-success.svg" alt="Icon success">
-
-      <h2>Thanks for subscribing!</h2>
-      <p>
-        A confirmation email has been sent to <span id="email-address">ash@loremcompany.com</span>.
-        Please open it and click the button inside to confirm your subscription.
-      </p>
-
-      <button class="dismiss-message-btn">Dismiss message</button>
-    </div>
-    <!-- Success message end -->
-    <footer>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="https://wendellcs.github.io" target="_blank">Wendell de C. Silva</a>.
-      </div>
-    </footer>
-  </main>
-  <!-- Project JS -->
-  <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

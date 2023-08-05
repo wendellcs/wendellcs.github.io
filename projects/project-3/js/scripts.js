@@ -1,51 +1,84 @@
 (function () {
-    'use strict'
+    'use strict';
 
-    function getElement(element) { return document.querySelector(element) }
+    const form = document.querySelector(".form")
 
-    function addElementClass(element, _class) { element.classList.add(_class) }
-    function removeElementClass(element, _class) { element.classList.remove(_class) }
-
-    const errorMessage = getElement('.error-message')
-    addElementClass(errorMessage, 'hidden')
-
-    const form = getElement('form')
-    form.addEventListener('submit', (e) => {
-        e.preventDefault()
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
     })
 
-    const emailInput = getElement('.input-email')
-    const buttonSubscribe = getElement('.subscribe-btn')
-    buttonSubscribe.addEventListener('click', () => {
-        validateEmail(emailInput.value)
-    })
+    const buttonSubmitForm = document.querySelector('.btn-submit-form')
+    buttonSubmitForm.addEventListener('click', checkErrors)
 
-    const signUpStartMenu = getElement('.sign-up-start')
-    const successMessageMenu = getElement('.success-message')
-    const spanEmailAddress = getElement('#email-address')
-    function validateEmail(email) {
-        var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const name = document.querySelector(".first-name")
+    const email = document.querySelector(".email")
+    const password = document.querySelector(".password")
+    const passwordConfirmation = document.querySelector(".confirm-password")
+    function checkErrors() {
+        !name.value ? setErrorStatus(name, 'Field cannot be empty.') : setSuccessStatus(name)
+        !checkEmail(email.value) ? setErrorStatus(email, 'Valid email required') : setSuccessStatus(email)
+        checkPassword(password)
 
-        if (regex.test(email)) {
-            addElementClass(signUpStartMenu, 'hidden')
-            addElementClass(successMessageMenu, 'show')
-            spanEmailAddress.textContent = emailInput.value
+        if (password.value !== passwordConfirmation.value || !passwordConfirmation.value) {
+            setErrorStatus(passwordConfirmation, "Password didn't match.")
         } else {
-            removeElementClass(errorMessage, 'hidden')
-            addElementClass(emailInput, 'denied')
-            emailInput.focus()
+            setSuccessStatus(passwordConfirmation)
         }
     }
 
-    const buttonDismissMessage = getElement('.dismiss-message-btn')
-    buttonDismissMessage.addEventListener('click', () => {
-        if (signUpStartMenu.classList.contains('hidden')) {
-            removeElementClass(signUpStartMenu, 'hidden')
-            addElementClass(signUpStartMenu, 'show')
+    function setErrorStatus(element, msg) {
+        if (!element.classList.contains('error')) {
+            removeElementClass(element, 'success')
+            addElementClass(element, 'error')
+            setErrorMessage(element, msg)
+        } else {
+            setErrorMessage(element, msg)
         }
-        if (successMessageMenu.classList.contains('show')) {
-            removeElementClass(successMessageMenu, 'show')
-            addElementClass(successMessageMenu, 'hidden')
+    }
+
+    function setSuccessStatus(element) {
+        if (!element.classList.contains('success')) {
+            removeElementClass(element, 'error')
+            addElementClass(element, 'success')
+            setErrorMessage(element, ' ')
         }
-    })
+    }
+
+
+    function addElementClass(element, _class) {
+        element.classList.add(_class)
+    }
+    function removeElementClass(element, _class) {
+        element.classList.remove(_class)
+    }
+
+    function setErrorMessage(element, msg) {
+        const parent = element.nextElementSibling
+        parent.textContent = msg
+    }
+
+    function checkPassword(password) {
+        const minLength = 8
+        const charactersRegex = /[A-Z]/i;
+        const numberRegex = /\d/;
+
+        let passwordStr = password.value.toString()
+        if (passwordStr.length < minLength) {
+            return setErrorStatus(password, 'Password must have at least 8 characters.')
+        }
+        if (!charactersRegex.test(password.value)) {
+            return setErrorStatus(password, "Must contain at least one character.")
+        }
+        if (!numberRegex.test(password.value)) {
+            return setErrorStatus(password, "Must contain at least one number.")
+        }
+
+        return setSuccessStatus(password)
+    }
+
+    function checkEmail(email) {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+            email
+        );
+    }
 })()
