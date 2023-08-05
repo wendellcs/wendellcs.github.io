@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/wendellcs/wendellcs.github.io/tree/main/projects/intro-section-with-dropdown-navigation](https://github.com/wendellcs/wendellcs.github.io/tree/main/projects/intro-section-with-dropdown-navigation)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://wendellcs.github.io/projects/intro-section-with-dropdown-navigation/index.html](https://wendellcs.github.io/projects/intro-section-with-dropdown-navigation/index.html)
 
 ## My process
 
