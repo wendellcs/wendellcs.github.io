@@ -10,7 +10,6 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -25,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![intro-section](https://github.com/wendellcs/wendellcs.github.io/assets/88943437/835dbbca-dd9c-4acf-af1a-f11967bf3202)
 
 
 ### Links
@@ -42,9 +41,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - JavaScript
-
-### What I learned
-
 
 ## Author
 
