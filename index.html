@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,14 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400;1,900&display=swap"
+        rel="stylesheet">
     <!-- Dev Icon Fonts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <!-- CSS do projeto -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <main id="container">
         <aside id="bio-container">
@@ -23,86 +26,111 @@
             </div>
             <p>Olá, meu nome é Wendell e sou <span class="highlight">Desenvolvedor Front-end.</span></p>
             <p id="welcome-text">Seja bem-vindo!</p>
-            
+
             <ul id="social-container">
-                <li><a href="https://github.com/wendellcs" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                <li><a href="https://www.linkedin.com/in/wendell-de-carvalho-silva-63ba86219/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://github.com/wendellcs" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/wendell-de-carvalho-silva-63ba86219/" target="_blank"><ion-icon
+                            name="logo-linkedin"></ion-icon></a></li>
             </ul>
-            
+
             <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon><a href="mailto:wendellcs131@gmail.com">wendellcs131@gmail.com</a>
+                <ion-icon name="mail-outline"></ion-icon><a
+                    href="mailto:wendellcs131@gmail.com">wendellcs131@gmail.com</a>
             </div>
         </aside>
 
         <section id="about-container">
-            <h1 id="name">Wendell de Carvalho Silva</h1>
-            <p id="title">Desenvolvedor Front-end</p>
-            <p class="description">
-                Busco sempre aperfeiçoar minhas habilidades, com o objetivo de elevar tanto o nível quanto a qualidade dos meus projetos.
-            </p>
-            <p class="description">
-                Meu primeiro contato com <span class="highlight">desenvolvimento web</span> foi há cerca de um ano e foi quando eu tive
-                um grande interesse pela criação de páginas web. Desde então, tenho buscado
-                conhecimento na área e atualmente estou cursando <span class="highlight">Ciências da Computação</span> e
-                desenvolvendo diversos projetos para aprimorar minhas habilidades.
-            </p>
-            <a href="https://github.com/WendellCS/" target="_blank" id="btn-github"><i class="devicon-github-plain colored"></i><span>GitHub</span></a>
-        
-            <h2 id="skills-section-title">Minhas Skills</h2>
-            <p class="description">Conheça as tecnologias e ferramentas que domino:</p>
-            <div id="skills-container">
-                <div class="skills-box">
-                    <p class="skills-title">Front-end:</p>
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Tools:</p>
-                    <i class="devicon-git-plain colored"></i>
-                    <i class="devicon-github-plain colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Idiomas:</p>
-                    <ul id="language-skills">
-                        <li>Inglês (Intermediário)</li>
-                        <li>Português (Nativo)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="projects">
-                <h2>Alguns dos meus projetos:</h2>
-                <div class="projects-container">
-                    <div class="projects-container__image">
-                        <div class="projects-container__image--links">
-                            <a href="https://github.com/wendellcs/Projects/tree/main/calculator" target="_blank">GitHub</a>
-                            <a href="https://wendellcs.github.io/Projects/calculator/" target="_blank">Live Site</a>
-                        </div>
-                        <img src="img/calculator.png" alt="Imagem do projeto: Calculator">
-                    </div>
+            <!-- Header -->
+            <header id="menu">
+                <button class="menu-btn home active">Home</button>
+                <button class="menu-btn projects">Meus projetos</button>
+                <button class="menu-btn">Currículo</button>
+            </header>
+            <!-- End of Header -->
+            <div class="skills-section-container">
+                <h1 id="name">Wendell de Carvalho Silva</h1>
+                <p id="title">Desenvolvedor Front-end</p>
+                <p class="description">
+                    Busco sempre aperfeiçoar minhas habilidades, com o objetivo de elevar tanto o nível quanto a
+                    qualidade
+                    dos meus projetos.
+                </p>
+                <p class="description">
+                    Meu primeiro contato com <span class="highlight">desenvolvimento web</span> foi há cerca de um ano e
+                    foi
+                    quando eu tive
+                    um grande interesse pela criação de páginas web. Desde então, tenho buscado
+                    conhecimento na área e atualmente estou cursando <span class="highlight">Ciências da
+                        Computação</span> e
+                    desenvolvendo diversos projetos para aprimorar minhas habilidades.
+                </p>
+                <a href="https://github.com/WendellCS/" target="_blank" id="btn-github"><i
+                        class="devicon-github-plain colored"></i><span>GitHub</span></a>
 
-                    <div class="projects-container__image">
-                        <div class="projects-container__image--links">
-                            <a href="https://github.com/wendellcs/Projects/tree/main/news-homepage" target="_blank">GitHub</a>
-                            <a href="https://wendellcs.github.io/Projects/news-homepage/" target="_blank">Live Site</a>
-                        </div>
-                        <img src="img/news-homepage.png" alt="Imagem do projeto: News homepage">
+                <h2 id="skills-section-title">Minhas Skills</h2>
+                <p class="description">Conheça as tecnologias e ferramentas que domino:</p>
+                <div id="skills-container">
+                    <div class="skills-box">
+                        <p class="skills-title">Front-end:</p>
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-css3-plain colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
                     </div>
-
-                    <div class="projects-container__image">
-                        <div class="projects-container__image--links">
-                            <a href="https://github.com/wendellcs/Projects/tree/main/registration-form" target="_blank">GitHub</a>
-                            <a href="https://wendellcs.github.io/Projects/registration-form/" target="_blank">Live Site</a>
-                        </div>
-                        <img src="img/registration-form.png" alt="Imagem do projeto: Registration-form">
+                    <div class="skills-box">
+                        <p class="skills-title">Tools:</p>
+                        <i class="devicon-git-plain colored"></i>
+                        <i class="devicon-github-plain colored"></i>
+                    </div>
+                    <div class="skills-box">
+                        <p class="skills-title">Idiomas:</p>
+                        <ul id="language-skills">
+                            <li>Inglês (Intermediário)</li>
+                            <li>Português (Nativo)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+
+            <!-- Projects Section -->
+
+            <section class="projects-section">
+                <div class="container">
+                    <div class="project-container">
+                        <div class="project-box">
+                            <h2>News home-page</h2>
+                            <div class="image-container">
+                                <a href="" target="_blank">
+                                    <img src="img/news-homepage.png" alt="project image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-box">
+                            <h2>Registration form</h2>
+                            <div class="image-container">
+                                <a href="project-2/index.html" target="_blank">
+                                    <img src="img/form-with-validation.png" alt="project image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-box">
+                            <h2>newsletter signup</h2>
+                            <div class="image-container">
+                                <a href="project-3/index.html" target="_blank">
+                                    <img src="img/newsletter-signup-form.png" alt="project image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
     <!-- Ion Icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
