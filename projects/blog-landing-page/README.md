@@ -21,7 +21,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://github.com/wendellcs/wendellcs.github.io/tree/main/projects/blog-landing-page](https://github.com/wendellcs/wendellcs.github.io/tree/main/projects/blog-landing-page)
 - Live Site URL: []()
 
 ## My process

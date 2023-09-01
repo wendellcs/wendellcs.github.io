@@ -391,16 +391,16 @@ body a {
 }
 
 .project-container {
-    width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 5rem;
+    gap: 2rem;
+    justify-content: center;
 }
 
 .project-box {
     text-align: center;
-    width: 28%;
+    width: 38rem;
 }
 
 .project-box h2 {
@@ -463,7 +463,6 @@ body a {
     }
 
     .project-box {
-        width: 100%;
         margin: 0 auto 2rem auto;
     }
 }
@@ -499,6 +498,13 @@ body a {
     .projects-container__image--links a {
         padding: 5%;
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width:660px) {
+    .project-box {
+        width: 100%;
+        margin: 0 auto 2rem auto;
     }
 }
 
@@ -549,10 +555,6 @@ body a {
     #btn-github {
         margin: 2rem auto;
         width: 70%;
-    }
-
-    .project-container {
-        padding: 0;
     }
 
     .projects-container__image--links a {
