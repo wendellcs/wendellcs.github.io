@@ -551,6 +551,10 @@ body a {
         width: 70%;
     }
 
+    .project-container {
+        padding: 0;
+    }
+
     .projects-container__image--links a {
         font-size: 2rem;
     }
