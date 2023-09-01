@@ -99,41 +99,41 @@ li {
     align-items: center;
 }
 
-.desktop-menu {
+#desktop-menu {
     margin-left: 6rem;
 }
 
-.desktop-menu>ul {
+#desktop-menu>ul {
     display: flex;
     margin-left: 2rem;
     gap: 3rem;
 }
 
-.desktop-menu>ul li {
+#desktop-menu>ul li {
     position: relative;
 }
 
-.desktop-menu>ul>li:hover .desktop-arrow {
+#desktop-menu>ul>li:hover .desktop-arrow {
     transform: rotate(-180deg);
 }
 
-.desktop-menu>ul li img {
+#desktop-menu>ul li img {
     margin-left: .2rem;
     transition: .4s;
 }
 
-.desktop-menu a {
+#desktop-menu a {
     font-weight: 500;
     color: var(--intro-font-color);
 }
 
-.desktop-menu>ul>li>a:hover {
+#desktop-menu>ul>li>a:hover {
     text-decoration: underline 2px;
 }
 
 /* Desktop Dropdown Menu */
 
-.desktop-menu>ul>li:hover .wrapper {
+#desktop-menu>ul>li:hover .wrapper {
     grid-template-rows: 1fr;
 }
 
