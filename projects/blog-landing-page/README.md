@@ -22,7 +22,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 ### Links
 
 - Solution URL: [https://github.com/wendellcs/wendellcs.github.io/tree/main/projects/blog-landing-page](https://github.com/wendellcs/wendellcs.github.io/tree/main/projects/blog-landing-page)
-- Live Site URL: []()
+- Live Site URL: [https://wendellcs.github.io/projects/blog-landing-page/index.html](https://wendellcs.github.io/projects/blog-landing-page/index.html)
 
 ## My process
 
