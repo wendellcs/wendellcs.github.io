@@ -302,12 +302,12 @@ li {
     /* height: 600px; */
 }
 
-/* .intro-container {
+.intro-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-} */
+}
 
 .intro-title {
     margin-top: 7rem;
@@ -326,10 +326,7 @@ li {
 }
 
 .intro-buttons {
-    width: 100%;
-    height: 20rem;
     display: flex;
-    justify-content: center;
     margin-bottom: 15rem;
     gap: 1rem;
 }
