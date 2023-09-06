@@ -409,7 +409,6 @@ li {
 /* Footer */
 
 #blog-footer {
-    width: 100%;
     background: var(--footer-bg-color);
     color: var(--footer-text-color);
     border-radius: 0 100px 0 0;
@@ -417,8 +416,13 @@ li {
 }
 
 .content-container.footer {
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 25% 75%;
     padding-top: 7rem;
+}
+
+#footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
 }
 
 .links-container {
