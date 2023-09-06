@@ -81,6 +81,12 @@ li {
     position: relative;
 }
 
+#menu-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
 .main-menu-container {
     width: 100%;
     display: flex;
@@ -155,6 +161,9 @@ li {
 #mobile-menu-icon {
     display: none;
     cursor: pointer;
+    position: absolute;
+    right: 7%;
+    top: 42%;
 }
 
 #mobile-menu-icon.active {
@@ -630,6 +639,10 @@ li {
 @media (max-width: 375px) {
     #menu {
         padding: 4rem 2rem;
+    }
+
+    #mobile-menu-icon {
+        right: 5%;
     }
 
     #presentation .content-container,
