@@ -499,14 +499,6 @@ li {
     filter: blur(0);
 }
 
-#footer-links.hidden {
-    transform: translateY(5rem);
-}
-
-#footer-links.hidden.show {
-    transform: translateY(0);
-}
-
 @media(prefers-reduced-motion) {
 
     .hidden,
