@@ -1,5 +1,5 @@
 const btnOpenMobileMenu = document.getElementById('mobile-menu-icon')
-const divWrapper = document.querySelector('.mobile-wrapper')
+const divWrapper = document.querySelector('.wrapper')
 btnOpenMobileMenu.addEventListener('click', () => {
     divWrapper.classList.toggle('active')
     if (divWrapper.classList.contains('active')) {
@@ -7,11 +7,16 @@ btnOpenMobileMenu.addEventListener('click', () => {
     } else {
         btnOpenMobileMenu.className = ''
     }
+});
+
+// Hides the mobile menu if the page width is greater than 1095px.
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 1095) {
+        divWrapper.classList.remove('active')
+    }
 })
 
-
 // Observer
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
