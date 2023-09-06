@@ -420,7 +420,7 @@ li {
     padding-top: 7rem;
 }
 
-#footer-nav {
+#footer-links {
     display: grid;
     grid-template-columns: repeat(3, 33%);
 }
@@ -600,6 +600,10 @@ li {
     .content-container.footer img {
         margin: auto;
         margin-bottom: 6rem;
+    }
+
+    #footer-links {
+        grid-template-columns: 100%;
     }
 
     .topic-text {
