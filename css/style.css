@@ -291,6 +291,25 @@ body a {
     margin-bottom: 1rem;
 }
 
+.buttons-home {
+    margin: 40px 0;
+    display: flex;
+    gap: 2rem;
+}
+
+#cv-icon img {
+    width: 50px;
+    background: #C42021;
+    padding: .5rem;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+#cv-icon img:hover {
+    border: 1px solid var(--border-color);
+    background: transparent;
+}
+
 #btn-github {
     display: flex;
     font-size: 1.6rem;
@@ -301,8 +320,9 @@ body a {
     border-radius: .5rem;
     text-decoration: none;
     transition: .5s;
-    margin: 3.85rem 0;
-    padding: 1.2rem 1rem;
+    height: 50px;
+    align-items: center;
+    padding: 0 1rem;
     width: 15rem;
     text-align: center;
 }
