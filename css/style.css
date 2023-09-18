@@ -49,8 +49,8 @@ body a {
 
 #image-container {
     margin: auto;
-    width: 17.5rem;
-    height: 17.5rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
     margin-bottom: 3rem;
     background: #f0f7ee;
@@ -59,6 +59,8 @@ body a {
 #bio-image {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
 }
 
 #about-container {
@@ -418,6 +420,8 @@ body a {
     transform: scale(1.05);
     transition: .2s;
 }
+
+
 
 .image-container img {
     width: 100%;
