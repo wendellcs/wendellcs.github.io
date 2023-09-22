@@ -584,6 +584,16 @@ body a {
     .projects-container__image--links a {
         font-size: 2rem;
     }
+
+    .buttons-home {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+
+    #cv-icon {
+        width: auto;
+    }
 }
 
 @media (max-width: 365px) {
