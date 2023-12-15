@@ -51,5 +51,3 @@ mobileMenuBtn.addEventListener('click', () => {
     mobileMenuBtn.classList.toggle('active')
     mobileMenuBtnContainer.classList.toggle('active')
 })
-
-
