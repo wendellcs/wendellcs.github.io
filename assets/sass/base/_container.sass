@@ -1,0 +1,9 @@
+@use './variables'
+@use './utilities'
+
+.container
+    display: flex
+    color: variables.$primary-color
+
+    @include utilities.mobile-view
+        flex-direction: column

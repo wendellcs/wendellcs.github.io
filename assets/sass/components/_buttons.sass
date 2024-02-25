@@ -1,0 +1,64 @@
+@use '../base/variables'
+@use '../base/utilities'
+
+.btn
+    width: 140px
+    height: 40px
+    border: none
+    color: variables.$text-color
+    font-size: 1.6rem
+    border-radius: 10px
+    background: variables.$primary-color
+    cursor: pointer
+    font-weight: bold
+    transition: .3s
+
+    &.home , &.projects
+        background: none
+        position: relative
+
+        &.active
+            color: variables.$secondary-color
+            cursor: default
+
+            &:after
+                background: variables.$secondary-color
+
+            &:hover
+                color: variables.$secondary-color
+
+                &:after
+                    width: 50%
+
+        &:after
+            content: ''
+            width: 50%
+            height: 4px
+            background: variables.$primary-color
+            position: absolute
+            bottom: 0
+            left: 50%
+            rigth: 50%
+            transform: translate(-50%,-50%)
+            transition: .3s
+
+        &:hover
+            color: variables.$primary-color
+            &:after
+                width: 100%
+
+    &.github, &.cv
+        @include utilities.center-element
+        width: 40px
+        background: none
+        border: 1px solid variables.$primary-color
+
+        i
+            font-size: 30px
+
+        img
+            width: 30px
+
+        &:hover
+            transform: scale(1.1)
+            background: variables.$primary-color

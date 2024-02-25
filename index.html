@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <title>Portfólio | Wendell C. Silva</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,20 +15,19 @@
     <!-- Dev Icon Fonts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <!-- CSS do projeto -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-    <main id="container">
-        <aside id="bio-container">
-            <h2>Wendell</h2>
-            <div id="image-container">
+    <main class="container">
+        <aside class="container-bio">
+            <div class="container-bio-image">
                 <img id="bio-image" src="assets/images/profile.jpg" alt="Wendell de Carvalho Silva">
             </div>
             <p>Olá, meu nome é Wendell e sou <span class="highlight">Desenvolvedor Front-end.</span></p>
-            <p id="welcome-text">Seja bem-vindo!</p>
+            <p class="container-bio-welcome-text">Seja bem-vindo!</p>
 
-            <ul id="social-container">
+            <ul class="container-bio-social">
                 <li><a href="https://github.com/wendellcs" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
                 </li>
                 <li><a href="https://www.linkedin.com/in/wendell-de-carvalho-silva-63ba86219/" target="_blank"><ion-icon
@@ -36,34 +35,25 @@
                 </li>
             </ul>
 
-            <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon><a
-                    href="mailto:wendellcs131@gmail.com">wendellcs131@gmail.com</a>
+            <div class="container-bio-email">
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:wendellcs131@gmail.com">wendellcs131@gmail.com</a>
             </div>
         </aside>
 
-        <section id="about-container">
+        <section class="about-container">
             <!-- Header -->
-            <header id="menu">
-                <!-- Mobile menu -->
-                <div class="mobile-menu">
-                    <div class="mobile-menu-icon"></div>
-                    <div class="buttons-container">
-                        <button class="mobile-menu-btn home active">Home</button>
-                        <button class="mobile-menu-btn projects">Meus projetos</button>
-                    </div>
-                </div>
-
+            <header class="about-container-menu">
                 <!-- Menu Desktop -->
-                <div class="desktop-menu">
-                    <button class="menu-btn home active">Home</button>
-                    <button class="menu-btn projects">Meus projetos</button>
+                <div class="about-container-menu-buttons">
+                    <button class="btn home active">Home</button>
+                    <button class="btn projects">Meus projetos</button>
                 </div>
             </header>
             <!-- End of Header -->
-            <div class="skills-section-container">
-                <h1 id="name">Wendell de Carvalho Silva</h1>
-                <p id="title">Desenvolvedor Front-end</p>
+            <div class="about-container-skills">
+                <h1 class="name">Wendell de Carvalho Silva</h1>
+                <p class="title">Desenvolvedor Front-end</p>
                 <p class="description">
                     Busco sempre aperfeiçoar minhas habilidades, com o objetivo de elevar tanto o nível quanto a
                     qualidade
@@ -78,33 +68,33 @@
                         Computação</span> e
                     desenvolvendo diversos projetos para aprimorar minhas habilidades.
                 </p>
-                <div class="buttons-home">
-                    <a href="https://github.com/WendellCS/" target="_blank" id="btn-github"><i
-                            class="devicon-github-plain colored"></i><span>GitHub</span>
+                <div class="about-container-skills-buttons">
+                    <a href="https://github.com/WendellCS/" target="_blank" class="btn github"><i
+                            class="devicon-github-plain colored"></i>
                     </a>
-                    <a id="cv-icon" href="assets/CV-WendellCSilva.pdf" download><img src="assets/resume-icon.png"
-                            alt="resume icon"></a>
+                    <a class="btn cv" href="assets/doc/CV-WendellCSilva.pdf" download><img
+                            src="assets/images/resume-icon.png" alt="Resume icon"></a>
                 </div>
 
 
-                <h2 id="skills-section-title">Minhas Skills</h2>
+                <h2 class="about-container-skills-title">Minhas Skills</h2>
                 <p class="description">Conheça as tecnologias e ferramentas que domino:</p>
-                <div id="skills-container">
+                <div class="about-container-skills-container">
                     <div class="skills-box">
-                        <p class="skills-title">Front-end:</p>
+                        <p class="skills-box-title">Front-end:</p>
                         <i class="devicon-html5-plain colored"></i>
                         <i class="devicon-css3-plain colored"></i>
                         <i class="devicon-javascript-plain colored"></i>
                         <i class="devicon-sass-plain colored"></i>
                     </div>
                     <div class="skills-box">
-                        <p class="skills-title">Tools:</p>
+                        <p class="skills-box-title">Tools:</p>
                         <i class="devicon-git-plain colored"></i>
                         <i class="devicon-github-plain colored"></i>
                     </div>
                     <div class="skills-box">
-                        <p class="skills-title">Idiomas:</p>
-                        <ul id="language-skills">
+                        <p class="skills-box-title">Idiomas:</p>
+                        <ul class="skills-box-languages">
                             <li>Inglês (Avançado)</li>
                             <li>Português (Nativo)</li>
                         </ul>
@@ -114,112 +104,110 @@
 
             <!-- Projects Section -->
 
-            <section class="projects-section">
-                <div class="project-container">
-                    <div class="project-box">
-                        <h2>React Filmaria</h2>
-                        <div class="image-container">
-                            <a href="https://filmaria-nu.vercel.app" target="_blank">
-                                <img src="assets/images/filmaria.png" alt="project image">
-                            </a>
-                        </div>
+            <section class="container-projects hidden">
+                <div class="project-box">
+                    <h2>React Filmaria</h2>
+                    <div class="image-container">
+                        <a href="https://filmaria-nu.vercel.app" target="_blank">
+                            <img src="assets/images/filmaria.png" alt="project image">
+                        </a>
                     </div>
-                    <div class="project-box">
-                        <h2>React ToDo List</h2>
-                        <div class="image-container">
-                            <a href="https://todo-list-mauve-mu.vercel.app" target="_blank">
-                                <img src="assets/images/todo-list.png" alt="project image">
-                            </a>
-                        </div>
+                </div>
+                <div class="project-box">
+                    <h2>React ToDo List</h2>
+                    <div class="image-container">
+                        <a href="https://todo-list-mauve-mu.vercel.app" target="_blank">
+                            <img src="assets/images/todo-list.png" alt="project image">
+                        </a>
                     </div>
-                    <div class="project-box">
-                        <h2>Hangman Game</h2>
-                        <div class="image-container">
-                            <a href="https://wendellcs.github.io/hangman" target="_blank">
-                                <img src="assets/images/hangman.png" alt="project image">
-                            </a>
-                        </div>
+                </div>
+                <div class="project-box">
+                    <h2>Hangman Game</h2>
+                    <div class="image-container">
+                        <a href="https://wendellcs.github.io/hangman" target="_blank">
+                            <img src="assets/images/hangman.png" alt="project image">
+                        </a>
                     </div>
-                    <div class="project-box">
-                        <h2>Blog Landing page</h2>
-                        <div class="image-container">
-                            <a href="https://wendellcs.github.io/blog-landing-page/" target="_blank">
-                                <img src="assets/images/blog-landing-page.png" alt="project image">
-                            </a>
-                        </div>
+                </div>
+                <div class="project-box">
+                    <h2>Blog Landing page</h2>
+                    <div class="image-container">
+                        <a href="https://wendellcs.github.io/blog-landing-page/" target="_blank">
+                            <img src="assets/images/blog-landing-page.png" alt="project image">
+                        </a>
                     </div>
-                    <div class="project-box">
-                        <h2>Intro section</h2>
-                        <div class="image-container">
-                            <a href="https://wendellcs.github.io/Projects/intro-section-with-dropdown-navigation/"
-                                target="_blank">
-                                <img src="assets/images/intro-section.png" alt="project image">
-                            </a>
-                        </div>
+                </div>
+                <div class="project-box">
+                    <h2>Intro section</h2>
+                    <div class="image-container">
+                        <a href="https://wendellcs.github.io/Projects/intro-section-with-dropdown-navigation/"
+                            target="_blank">
+                            <img src="assets/images/intro-section.png" alt="project image">
+                        </a>
                     </div>
-                    <div class="project-box">
-                        <h2>News home-page</h2>
-                        <div class="image-container">
-                            <a href="https://wendellcs.github.io/Projects/news-homepage/" target="_blank">
-                                <img src="assets/images/news-homepage.png" alt="project image">
-                            </a>
-                        </div>
+                </div>
+                <div class="project-box">
+                    <h2>News home-page</h2>
+                    <div class="image-container">
+                        <a href="https://wendellcs.github.io/Projects/news-homepage/" target="_blank">
+                            <img src="assets/images/news-homepage.png" alt="project image">
+                        </a>
                     </div>
-                    <div class="project-box">
-                        <h2>Newsletter form</h2>
-                        <div class="image-container">
-                            <a href="https://wendellcs.github.io/Projects/newsletter-sign-up-form/" target="_blank">
-                                <img src="assets/images/newsletter-signup-form.png" alt="project image">
-                            </a>
-                        </div>
+                </div>
+                <div class="project-box">
+                    <h2>Newsletter form</h2>
+                    <div class="image-container">
+                        <a href="https://wendellcs.github.io/Projects/newsletter-sign-up-form/" target="_blank">
+                            <img src="assets/images/newsletter-signup-form.png" alt="project image">
+                        </a>
                     </div>
-                    <div class="project-box">
-                        <h2>Registration form</h2>
-                        <div class="image-container">
-                            <a href="https://wendellcs.github.io/Projects/registration-form" target="_blank">
-                                <img src="assets/images/registration-form.png" alt="project image">
-                            </a>
-                        </div>
+                </div>
+                <div class="project-box">
+                    <h2>Registration form</h2>
+                    <div class="image-container">
+                        <a href="https://wendellcs.github.io/Projects/registration-form" target="_blank">
+                            <img src="assets/images/registration-form.png" alt="project image">
+                        </a>
                     </div>
-                    <div class="project-box">
-                        <h2>Color Flipper</h2>
-                        <div class="image-container">
-                            <a href="https://wendellcs.github.io/Projects/color-flipper/" target="_blank">
-                                <img src="assets/images/color-flipper.png" alt="project image">
-                            </a>
-                        </div>
+                </div>
+                <div class="project-box">
+                    <h2>Color Flipper</h2>
+                    <div class="image-container">
+                        <a href="https://wendellcs.github.io/Projects/color-flipper/" target="_blank">
+                            <img src="assets/images/color-flipper.png" alt="project image">
+                        </a>
                     </div>
-                    <div class="project-box">
-                        <h2>Stats card</h2>
-                        <div class="image-container">
-                            <a href="https://wendellcs.github.io/Projects/stats-preview-card-component" target="_blank">
-                                <img src="assets/images/stats-preview-card.png" alt="project image">
-                            </a>
-                        </div>
+                </div>
+                <div class="project-box">
+                    <h2>Stats card</h2>
+                    <div class="image-container">
+                        <a href="https://wendellcs.github.io/Projects/stats-preview-card-component" target="_blank">
+                            <img src="assets/images/stats-preview-card.png" alt="project image">
+                        </a>
                     </div>
-                    <div class="project-box">
-                        <h2>Results summary</h2>
-                        <div class="image-container">
-                            <a href="https://wendellcs.github.io/Projects/results-summary/" target="_blank">
-                                <img src="assets/images/results-summary.png" alt="project image">
-                            </a>
-                        </div>
+                </div>
+                <div class="project-box">
+                    <h2>Results summary</h2>
+                    <div class="image-container">
+                        <a href="https://wendellcs.github.io/Projects/results-summary/" target="_blank">
+                            <img src="assets/images/results-summary.png" alt="project image">
+                        </a>
                     </div>
-                    <div class="project-box">
-                        <h2>Calculator</h2>
-                        <div class="image-container">
-                            <a href="https://wendellcs.github.io/Projects/calculator" target="_blank">
-                                <img src="assets/images/calculator.png" alt="project image">
-                            </a>
-                        </div>
+                </div>
+                <div class="project-box">
+                    <h2>Calculator</h2>
+                    <div class="image-container">
+                        <a href="https://wendellcs.github.io/Projects/calculator" target="_blank">
+                            <img src="assets/images/calculator.png" alt="project image">
+                        </a>
                     </div>
-                    <div class="project-box">
-                        <h2>Interative rating</h2>
-                        <div class="image-container">
-                            <a href="https://wendellcs.github.io/Projects/interactive-rating-component" target="_blank">
-                                <img src="assets/images/interative-rating-component.png" alt="project image">
-                            </a>
-                        </div>
+                </div>
+                <div class="project-box">
+                    <h2>Interative rating</h2>
+                    <div class="image-container">
+                        <a href="https://wendellcs.github.io/Projects/interactive-rating-component" target="_blank">
+                            <img src="assets/images/interative-rating-component.png" alt="project image">
+                        </a>
                     </div>
                 </div>
             </section>
