@@ -1,5 +1,5 @@
 @use '../base/_variables'
-@use '../base/_container'
+@use '../components/_container'
 @use '../base/_utilities'
 
 .container-bio
@@ -9,6 +9,7 @@
     text-align: center
     padding: 3rem 1.2rem
     border-right: 5px solid variables.$primary-color
+    position: relative
 
     @include utilities.mobile-view
         min-height: 250px
@@ -86,3 +87,22 @@
             color: variables.$text-color
             text-decoration: none
             max-width: 22.5rem
+
+    &-options
+        @include utilities.center-element
+        top: 20px
+        right: 20px
+        position: fixed
+
+        .theme
+
+            .darkmode , .lightmode
+                font-size: 30px
+                transition: .3s
+                cursor: pointer
+
+                &.hidden
+                    display: none
+
+                &:hover
+                    transform: scale(1.2)

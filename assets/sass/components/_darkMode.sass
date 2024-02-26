@@ -1,0 +1,63 @@
+@use './_container'
+@use '../base/variables'
+
+.container
+    &.dark
+
+        p, a , li, .btn
+            color: variables.$text-secondary-color
+
+        i, ion-icon
+            color: variables.$dark-secondary-color
+
+        // Bio container
+        .container-bio
+            border-color: variables.$dark-secondary-color
+            background: variables.$dark-bio-color
+
+            .highlight
+                color: variables.$dark-primary-color
+
+            a:hover
+                color: variables.$dark-secondary-color
+
+            &-social
+                border-color: variables.$dark-secondary-color
+
+            &-image
+                background: none
+
+            img
+                border-color: variables.$dark-secondary-color
+
+        // About container
+        .about-container
+            background: variables.$dark-bg-color
+
+            .highlight, h2, .name, .skills-box-title
+                color: variables.$dark-primary-color
+
+            .btn
+                border-color: variables.$dark-secondary-color
+
+                &:hover
+                    color: variables.$dark-primary-color
+
+                &:after
+                    background: variables.$dark-primary-color
+
+                &.active
+                    color: variables.$dark-primary-color
+
+                &.cv, &.github
+                    &:hover
+                        background: variables.$dark-hover-color
+
+            li
+                &:before
+                    background: variables.$dark-secondary-color
+
+        // Projects 
+        .container-projects
+            .image-container
+                border-color: variables.$dark-secondary-color

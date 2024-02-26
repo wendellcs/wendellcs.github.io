@@ -38,6 +38,59 @@ li {
   }
 }
 
+.container.dark p, .container.dark a, .container.dark li, .container.dark .btn {
+  color: #ece7e7;
+}
+.container.dark i, .container.dark ion-icon {
+  color: #59F8E8;
+}
+.container.dark .container-bio {
+  border-color: #59F8E8;
+  background: #333335;
+}
+.container.dark .container-bio .highlight {
+  color: #16A2F3;
+}
+.container.dark .container-bio a:hover {
+  color: #59F8E8;
+}
+.container.dark .container-bio-social {
+  border-color: #59F8E8;
+}
+.container.dark .container-bio-image {
+  background: none;
+}
+.container.dark .container-bio img {
+  border-color: #59F8E8;
+}
+.container.dark .about-container {
+  background: #212122;
+}
+.container.dark .about-container .highlight, .container.dark .about-container h2, .container.dark .about-container .name, .container.dark .about-container .skills-box-title {
+  color: #16A2F3;
+}
+.container.dark .about-container .btn {
+  border-color: #59F8E8;
+}
+.container.dark .about-container .btn:hover {
+  color: #16A2F3;
+}
+.container.dark .about-container .btn:after {
+  background: #16A2F3;
+}
+.container.dark .about-container .btn.active {
+  color: #16A2F3;
+}
+.container.dark .about-container .btn.cv:hover, .container.dark .about-container .btn.github:hover {
+  background: rgba(126, 196, 192, 0.368627451);
+}
+.container.dark .about-container li:before {
+  background: #59F8E8;
+}
+.container.dark .container-projects .image-container {
+  border-color: #59F8E8;
+}
+
 .container-bio {
   flex: 1 1 20%;
   min-height: 100vh;
@@ -45,6 +98,7 @@ li {
   text-align: center;
   padding: 3rem 1.2rem;
   border-right: 5px solid #C42021;
+  position: relative;
 }
 @media (max-width: 590px) {
   .container-bio {
@@ -125,6 +179,25 @@ li {
   text-decoration: none;
   max-width: 22.5rem;
 }
+.container-bio-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  right: 20px;
+  position: fixed;
+}
+.container-bio-options .theme .darkmode, .container-bio-options .theme .lightmode {
+  font-size: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.container-bio-options .theme .darkmode.hidden, .container-bio-options .theme .lightmode.hidden {
+  display: none;
+}
+.container-bio-options .theme .darkmode:hover, .container-bio-options .theme .lightmode:hover {
+  transform: scale(1.2);
+}
 
 .btn {
   width: 140px;
@@ -181,11 +254,8 @@ li {
   background: none;
   border: 1px solid #C42021;
 }
-.btn.github i, .btn.cv i {
+.btn.github i, .btn.github ion-icon, .btn.cv i, .btn.cv ion-icon {
   font-size: 30px;
-}
-.btn.github img, .btn.cv img {
-  width: 30px;
 }
 .btn.github:hover, .btn.cv:hover {
   transform: scale(1.1);

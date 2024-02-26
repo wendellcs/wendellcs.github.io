@@ -27,3 +27,23 @@ projectsBtn.addEventListener('click', () => {
         homeBtn.classList.remove('active')
     }
 })
+
+const darkModeBtn = document.querySelector('.darkmode')
+const lightModeBtn = document.querySelector('.lightmode')
+const container = document.querySelector('.container')
+
+darkModeBtn.addEventListener('click', () => {
+    if (!container.classList.contains('dark')) {
+        container.classList.add('dark')
+        darkModeBtn.classList.add('hidden')
+        lightModeBtn.classList.remove('hidden')
+    }
+})
+
+lightModeBtn.addEventListener('click', () => {
+    if (container.classList.contains('dark')) {
+        container.classList.remove('dark')
+        darkModeBtn.classList.remove('hidden')
+        lightModeBtn.classList.add('hidden')
+    }
+})
